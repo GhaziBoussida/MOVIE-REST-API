@@ -18,9 +18,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Flask-SQLAlchemy
 - Flask-JWT-Extended
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
+The Movie REST API uses Mailgun API to send registration email to new users.
 ## Installation
 
 1. Clone the repository:
@@ -37,6 +35,11 @@ pip install -r requirements.txt
 ```sh
 export FLASK_APP=app
 export FLASK_ENV=development
+```
+3. Set the MAILGUN_API_KEY and MAILGUN_DOMAIN environment variables in .env file:
+```
+MAILGUN_API_KEY="Value"
+MAILGUN_DOMAIN="Value"
 ```
 4. Run the development server:
 ```sh
