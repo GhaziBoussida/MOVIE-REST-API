@@ -817,4 +817,4 @@ The API will be available at the domain URL provided by Render.
 - [Flask](https://flask.palletsprojects.com/en/2.1.x/) - The web framework used
 - [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/) - The ORM used for interacting with the database
 - [Flask-JWT-Extended](https://flask-jwt-extended.readthedocs.io/en/stable/) - A library for adding JSON Web Token (JWT) support to Flask, including access and refresh tokens, token refreshment, and role-based access control. This library was used to provide secure authentication and authorization for the API.
-
+- [MAILGUN API](https://documentation.mailgun.com/en/latest/) - Email API for Sending. Send, receive, and track emails with Mailgun's email API.
