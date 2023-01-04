@@ -36,12 +36,12 @@ pip install -r requirements.txt
 export FLASK_APP=app
 export FLASK_ENV=development
 ```
-3. Set the MAILGUN_API_KEY and MAILGUN_DOMAIN environment variables in .env file:
+4. Set the MAILGUN_API_KEY and MAILGUN_DOMAIN environment variables in .env file:
 ```
 MAILGUN_API_KEY="Value"
 MAILGUN_DOMAIN="Value"
 ```
-4. Run the development server:
+5. Run the development server:
 ```sh
 flask run
 ```
@@ -795,6 +795,22 @@ flask run
 The API will be available at http://localhost:5000.
 
 #### Online deployment
+
+1- Push Repository to GitHub. Do NOT include the .env file that contains the API key.
+
+2- Create Render.com account.
+
+3- Link Github and Render accounts.
+
+4- Create new WebService Project in Render
+
+5- Link Github repository.
+
+4- Add environment variables or upload .env file to Render.
+
+5- Deploy the API
+The API will be available at the domain URL provided by Render.
+
 ## Built With
 - [Python](https://www.python.org/) - The programming language used
 - [Flask](https://flask.palletsprojects.com/en/2.1.x/) - The web framework used
