@@ -62,7 +62,7 @@ class ActorList(MethodView):
 
 @blp.route("/movie/<int:movie_id>/actor/<int:actor_id>")
 class LinkActorssToMovie(MethodView):
-    @jwt_required
+    @jwt_required()
     @blp.response(201, ActorSchema)
     def post(self, movie_id, actor_id):
         movie = MovieModel.query.get_or_404(movie_id)
@@ -77,7 +77,7 @@ class LinkActorssToMovie(MethodView):
             abort(500, message="An error occurred while inserting the actor.")
 
         return actor
-    @jwt_required
+    @jwt_required()
     @blp.response(200, ActorMovieSchema)
     def delete(self, movie_id, actor_id):
         jwt = get_jwt()
